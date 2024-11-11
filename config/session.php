@@ -18,7 +18,13 @@ return [
     |
     */
 
-    'driver' => env('SESSION_DRIVER', 'database'),
+    
+
+    'driver' => env('SESSION_DRIVER', 'file'),
+    'connection' => env('SESSION_CONNECTION'),
+    'store' => env('SESSION_STORE'),
+    'domain' => env('SESSION_DOMAIN'),
+    'secure' => env('SESSION_SECURE_COOKIE', false),
 
     /*
     |--------------------------------------------------------------------------
@@ -73,7 +79,6 @@ return [
     |
     */
 
-    'connection' => env('SESSION_CONNECTION'),
 
     /*
     |--------------------------------------------------------------------------
@@ -101,7 +106,6 @@ return [
     |
     */
 
-    'store' => env('SESSION_STORE'),
 
     /*
     |--------------------------------------------------------------------------
@@ -156,7 +160,6 @@ return [
     |
     */
 
-    'domain' => env('SESSION_DOMAIN'),
 
     /*
     |--------------------------------------------------------------------------
@@ -169,7 +172,6 @@ return [
     |
     */
 
-    'secure' => env('SESSION_SECURE_COOKIE'),
 
     /*
     |--------------------------------------------------------------------------
